@@ -23,8 +23,10 @@ codirector, % Uncomment to add a codirector to the title page
 \director{Nombre del Director}
 \pertenenciaDirector{pertenencia} 
 % FIXME:NO IMPLEMENTADO EL CODIRECTOR ni su pertenencia
-\codirector{John Doe} % para que aparezca en la portada se debe descomentar la opción codirector en el documentclass
-\pertenenciaCoDirector{FIUBA}
+%\codirector{John Doe} % para que aparezca en la portada se debe descomentar la opción codirector en el documentclass
+%\pertenenciaCoDirector{FIUBA}
+\codirector{Nombre del Codirector} % para que aparezca en la portada se debe descomentar la opción codirector en el documentclass
+\pertenenciaCoDirector{pertenencia}
 
 % Nombre del cliente, quien va a aprobar los resultados del proyecto, se puede usar con el comando \clientename y \empclientename
 \cliente{Juan Rosa}
@@ -92,7 +94,9 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el Lic. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en \textcolor{red}{la implementación de un prototipo de un sistema de monitoreo de las condiciones ambientales de un bioterio}, y tendrá un presupuesto preliminar estimado de \textcolor{red}{600} hs de trabajo y \textcolor{red}{\$0}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+%Por medio de la presente se acuerda con el Lic. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en \textcolor{red}{la implementación de un prototipo de un sistema de monitoreo de las condiciones ambientales de un bioterio}, y tendrá un presupuesto preliminar estimado de \textcolor{red}{600} hs de trabajo y \textcolor{red}{\$75.000}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.%
+
+Por medio de la presente se acuerda con el Lic. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en {la implementación de un prototipo de un sistema de monitoreo de las condiciones ambientales de un bioterio}, y tendrá un presupuesto preliminar estimado de {600} hs de trabajo y {\$75.000}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -115,57 +119,52 @@ Se adjunta a esta acta la planificación inicial.
 \section{1. Descripción técnica-conceptual del proyecto a realizar}
 \label{sec:descripcion}
 
+Un bioterio es un área artificial controlada donde se alojan animales o plantas bajo ciertas condiciones que permitan el desarrollo de la especie para guarda, crio o fines experimentales. Se deben registrar y estudiar las variables ambientales del laboratorio en general y de los bioterios en particular. Estas variables son: temperatura, humedad, cantidad de luz y CO2.
 
-\begin{consigna}{red} % El bloque "consigna" se usa para poner texto en rojo y dar una pequeña ayuda sobre cómo completar la sección
+El enfoque actual integrador del estudio de las enfermedades transmitidas a los animales, vegetales y humanos, involucra aspectos ecológicos y epidemiológicos denominados ecoepidemiológicos.
 
-El objetivo es que el lector en una o dos páginas entienda de qué se trata el proyecto y cuáles son sus desafíos, su motivación y su importancia.
+Los artrópodos son uno de los agentes transmisores de enfermedades. De modo independiente a su rol en el ciclo de vida del agente etiológico viral, bacteriano o parasitario. Actúan por acción directa como vector o indirecta por acción traumática e irritante de su picadura. 
 
-Se debe destacar claramente cuál es el valor que agrega el proyecto a realizar. ``El presente proyecto se destaca especialmente por incorporar tal cosa... Esto lo diferencia de otros sistemas similares en que ...''
+Los ciclos reproductivos de los artrópodos juegan un papel fundamental en la epidemiología de las enfermedades transmisibles. Hay diferentes causas que pueden afectar la transmisión de una enfermedad: las tasas de fecundidad y de mortalidad, la densidad de la población, su distribución por edades, la variación genética y la tasa de migración.  Algunas de estas variables pueden ser controladas en condiciones experimentales como la temperatura, humedad, ciclos de luz y ventilación como factores abióticos esenciales. Los ambientes especialmente diseñados, denominados insectarios, bioterios o animalarios, son la base de diversos estudios (Insect Morphology and Phylogeny, 2014)
 
-Puede ser útil incluir en esta sección la respuesta a alguna de estas preguntas:
+Los artrópodos tienen varios estados en su ciclo de vida relacionado con su metamorfosis. Puede ser completa (holometábolos): huevo, larva, pupa e imago. O bien incompletas (hemimetábolos) huevos, ninfas, imagos y con clasificaciones intermedias.  Cada uno de los estados tienen requerimientos de temperatura, humedad o inundación.  
 
-\begin{itemize}
-	\item ¿Cómo se vincula este proyecto con la misión de la organización?
-	\item ¿Cómo se inserta este proyecto en el modelo de negocio de la organización?
-	\item ¿Ayuda a la explicación si se incluye un lienzo Canvas del Modelo de Negocio?
-	\item ¿En qué estado del ciclo de vida está el producto que se desea reemplazar o mejorar?
-	\item ¿Cuáles son las necesidades que debe satisfacer?
-	\item ¿Por dónde pasa la innovación?
-\end{itemize}
+Los artrópodos hematófagos presentan limitaciones al momento de mantenerlos o de desarrollar su biología. Dependen de la fuente de alimentación sanguínea y otros nutrientes.  El rango de temperatura en general oscila entre 24ºC y 26ºC y 80% a 95% de humedad relativa, con fotoperíodos mediante ciclos de luz-oscuridad de 12 horas e intensidad de luz y tipo de luz variable según requerimientos (Arthropod Containment Guidelines, 2019).
 
-La descripción técnica-conceptual \textbf{debe incluir al menos un diagrama en bloques del sistema} y una frase como la siguiente: ``En la Figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. Se observa que...''. Luego recién más abajo de haber puesto esta frase, se pone la figura. La regla es que las figuras nunca pueden ir antes de ser mencionadas en el texto, porque sino el lector no entiende por qué de pronto aparece una figura.
+Los artrópodos que requieren agua como parte del ciclo de vida, como culícidos (mosquitos), simúlidos y ceratopogónidos (carachai, jejenes y polvorines) dependen de la calidad del agua y la temperatura ambiente. A mayor temperatura el ciclo se acorta y, por el contrario, a menor temperatura se prolonga; algunos casos incluso entran en latencia (diapausa).
 
-%\vspace{25px}
+Las larvas pueden ser acuáticas o terrestres. Se deben considerar la humedad relativa ambiental y requerimientos nutricionales diferentes. En el caso de las pupas o crisálidas, dependiendo de la especie de vectores, la temperatura es importante debido a que es un estado de transformación y no de alimentación como en la anterior. Los imagos eclosionarán en un ambiente controlado, pero no significa que continúen el ciclo de reproducción y generen colonias parentales o bien filiales de la misma especie (Insect Morphology and Phylogeny, 2014)
+
+El estudio de la biología en condiciones experimentales solo puede aplicarse a determinados artrópodos debido a las limitaciones propias del ciclo natural según experiencias preliminares.  Los resultados de estas observaciones permiten investigar aspectos referentes a los mecanismos de transmisión de patógenos, las comparaciones genéticas de poblaciones, la sistemática y la susceptibilidad a los insecticidas, entre otros. Sin embargo, debido a la gran dificultad de mantener a la mayoría de las colonias durante más de unas pocas generaciones, impide contar con tablas de vida. Situación que limita la comprensión del comportamiento de las colonias en la naturaleza (Insect Morphology and Phylogeny, 2014)
+
+El entorno de una colonia no puede duplicar las condiciones de nutrición, temperatura, humedad. La consecuencia será la afectación en el comportamiento de los adultos, la mortalidad de los huevos, el período de crecimiento de las larvas y la mortalidad de los adultos. No obstante, los datos de laboratorio proporcionan información de referencia esencial sobre el potencial reproductivo de algunas especies sometidas a experiencia como mosquitos y flebótomos (Diptera: Psychodidae: Phlebotominae). 
+
+Para estudios en biología de poblaciones de flebótomos en el campo, estas observaciones proporcionan pautas para aproximar los límites de los comportamientos biológicos esperados. Lo cual permite diseñar estrategias de control y de comprensión de comportamientos aplicables al desarrollo de mapas de riesgo epidemiológico (Escovar et al., 2004, Bueno Marí et al., 2015)
+
+
+El presente proyecto se desteca especialmente por incorporar una aplicación y un dispositivo que contendrá sensores capaces de registrar la temperatura, humedad, luminosidad y saturación de CO2 del bioterio. Podrá ser usado en cada uno de los estados larvarios, según las variables descriptas en los párrafos anteriores. Facilitará el registro, sistematización, alertas y presentación de datos periódicos en un tablero. Esto fortalecerá el proceso de investigación en todas sus etapas.
+
+En la figura 1 se presenta el diagrama general del sistema. Se observa que los dispositivos estarán instalados en los bioterios con conexión Wi-Fi a internet enviando la telemetría hacia el servidor del Instituto de Medicina Regional. Al mismo tiempo los investigadores pueden observar los datos recopilados.
 
 \begin{figure}[htpb]
 \centering 
-\includegraphics[width=.5\textwidth]{./Figuras/diagBloques.png}
-\caption{Diagrama en bloques del sistema}
+\includegraphics[width=.5\textwidth]{./Figuras/figura1.png}
+\caption{Diagrama general del sistema}
 \label{fig:diagBloques}
 \end{figure}
 
 \vspace{25px}
 
-El tamaño de la tipografía en TODAS las figuras debe ser adecuado para que NO pase lo que ocurre acá, donde el lector debe esforzarse para poder leer el texto. Los colores usados en el diagrama deben ser adecuados, tal que ayuden a comprender mejor el diagrama, preferentemente en la gama de colores pastel.
-\end{consigna}
+\begin{consigna}{red}
+En la actualidad.. ¿como hacen los investigadores?
 
+¿que necesidades debe satisfacer el proyecto?
+
+¿como se vincula este proyecto con la misión de la organización?
+\end{consigna}
 
 \section{2. Identificación y análisis de los interesados}
 \label{sec:interesados}
-
-\begin{consigna}{red} 
-Nota: (borrar esto y todas las consignas en color rojo antes de entregar este documento).
- 
-Es inusual que una misma persona esté en más de un rol, incluso en proyectos chicos.
- 
-Si se considera que una persona cumple dos o más roles, entonces sólo dejarla en el rol más importante. Por ejemplo:
-
-\begin{itemize}
-\item Si una persona es Cliente pero también colabora u orienta, dejarla solo como Cliente.
-\item Si una persona es el Responsable, no debe ser colocado también como Miembro del equipo.
-\end{itemize}
-
-Pero en cambio sí es usual que el Cliente y el Auspiciante sean el mismo, por ejemplo.
 
 \begin{table}[ht]
 %\caption{Identificación de los interesados}
@@ -174,75 +173,54 @@ Pero en cambio sí es usual que el Cliente y el Auspiciante sean el mismo, por e
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Rol           & Nombre y Apellido & Organización 	& Puesto 	\\ \hline
-Auspiciante   &                   &              	&        	\\ \hline
-Cliente       & \clientename      &\empclientename	&        	\\ \hline
-Impulsor      &                   &              	&        	\\ \hline
+Cliente       & \clientename      &\empclientename	& Investigador \\ \hline
 Responsable   & \authorname       & FIUBA        	& Alumno 	\\ \hline
-Colaboradores &                   &              	&        	\\ \hline
 Orientador    & \supname	      & \pertesupname 	& Director Trabajo final \\ \hline
-Equipo        & miembro1 \newline 
-				miembro2          &              	&        	\\ \hline
-Opositores    &                   &              	&        	\\ \hline
-Usuario final &                   &              	&        	\\ \hline
 \end{tabularx}
 \end{table}
 
-El Director suele ser uno de los Orientadores.
-
-No dejar celdas vacías; si no hay nada que poner en una celda colocar un signo ``-''.
-
-No dejar filas vacías; si no hay nada que poner en una fila entonces eliminarla.
-
-Es deseable listar a continuación las principales características de cada interesado.
- 
-Por ejemplo:
 \begin{itemize}
-	\item Auspiciante: es riguroso y exigente con la rendición de gastos. Tener mucho cuidado con esto.
-	\item Equipo: Juan Perez, suele pedir licencia porque tiene un familiar con una enfermedad. Planificar considerando esto.
-	\item Orientador: María Gómez va a poder ayudar mucho con la definición de los requerimientos.
+	\item Cliente: Juan Rosa es riguroso y exigente en los detalles.
+	\item Responsable: Norberto Rodríguez,único personal en el equipo de desarrollo.
 \end{itemize}
-
-\end{consigna}
-
 
 
 \section{3. Propósito del proyecto}
 \label{sec:proposito}
-
-\begin{consigna}{red}
-¿Por qué se hace el proyecto? ¿Qué se quiere lograr? 
-
-Se recomienda que sea solo un párrafo que empiece diciendo ``El propósito de este proyecto es...''.
-\end{consigna}
+El propósito de este proyecto es desarrollar un dispositivo para el monitoreo de las condiciones ambientales del bioterio, que incluya el registro, sistematización, presentación de alertas y análisis de información.
 
 \section{4. Alcance del proyecto}
 \label{sec:alcance}
 
-\begin{consigna}{red}
-¿Qué se incluye y que no se incluye en este proyecto?
+El proyecto incluye el diseño, desarrollo e implementación del sistema en conjunto con un prototipo de dispositivo instalado en el bioterio.
 
-Se refiere al trabajo a hacer para entregar el producto o resultado especificado. 
+Se desarrollaran las siguientes actividades:
+\begin{itemize}
+	\item Confección de un prototipo de dispositivo encargado de la telemetría.
+	\item Configuración del servidor Ubuntu server GNU/Linux distribución basada en Debian.
+	\item Instalación de la aplicación web.
+	\item Instalación y configuración de la base de datos
+	\item Confección de un dashboard.
+	\item Confección del módulo de alertas vía SMTP.
+\end{itemize}
 
-Explicitar todo lo quede comprendido dentro del alcance del proyecto.
 
-Explicitar además todo lo que no quede incluido (``El presente proyecto no incluye...'')
-
-\end{consigna}
-
+El presente proyecto no incluye:
+\begin{itemize}
+	\item Provisión de la infraestructura de datos e internet.
+	\item Certificaciones ante autoridades competentes.
+	\item Desarrollos para la automatización del bioterio.
+\end{itemize}
 
 \section{5. Supuestos del proyecto}
 \label{sec:supuestos}
 
-\begin{consigna}{red}
-``Para el desarrollo del presente proyecto se supone que: ...''
-
+Para el desarrollo del presente proyecto se supone que:
 \begin{itemize}
-	\item Supuesto 1
-	\item Supuesto 2...
+	\item En los bioterios donde se instalaran los dispositivos tendrán acceso a internet.
+	\item Se contara con los recursos humanos necesarios por parte del Instituto de Medicina Regional para llevar a cabo el proyecto.
+	\item Existe la disponibilidad de los componentes necesario para el desarrollo del prototipo de dispositivo.
 \end{itemize}
-
-Por ejemplo, se podrían incluir supuestos respecto a disponibilidad de tiempo y recursos humanos y materiales, sobre la factibilidad técnica de distintos aspectos del proyecto, sobre otras cuestiones que sean necesarias para el éxito del proyecto como condiciones macroeconómicas o reglamentarias.
-\end{consigna}
 
 \section{6. Requerimientos}
 \label{sec:requerimientos}
