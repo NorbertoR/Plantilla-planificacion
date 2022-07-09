@@ -1,13 +1,13 @@
 \documentclass[
 11pt, % The default document font size, options: 10pt, 11pt, 12pt
-codirector, % Uncomment to add a codirector to the title page
+%codirector, % Uncomment to add a codirector to the title page
 ]{charter} 
 
 
 
 
 % El títulos de la memoria, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \ttitle
-\titulo{Monitoreo de un bioterio} 
+\titulo{Sistema de Monitoreo para un bioterio} 
 
 % Nombre del posgrado, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \degreename
 %\posgrado{Carrera de Especialización en Sistemas Embebidos} 
@@ -17,7 +17,7 @@ codirector, % Uncomment to add a codirector to the title page
 %\posgrado{Maestría en Internet de las cosas}
 
 % Tu nombre, se puede usar el cualquier lugar del documento con el comando \authorname
-\autor{Norberto Antonio Rodríguez} 
+\autor{LSI Norberto Antonio Rodríguez} 
 
 % El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
 \director{Nombre del Director}
@@ -29,7 +29,7 @@ codirector, % Uncomment to add a codirector to the title page
 \pertenenciaCoDirector{pertenencia}
 
 % Nombre del cliente, quien va a aprobar los resultados del proyecto, se puede usar con el comando \clientename y \empclientename
-\cliente{Juan Rosa}
+\cliente{Dr. Juan Rosa}
 \empresaCliente{Instituto de Medicina Regional - UNNE}
 
 % Nombre y pertenencia de los jurados, se pueden usar el cualquier lugar del documento con el comando \jurunoname, \jurdosname y \jurtresname y \perteunoname, \pertedosname y \pertetresname.
@@ -70,8 +70,9 @@ codirector, % Uncomment to add a codirector to the title page
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
-0      & Creación del documento                                 &\fechaInicioName \\ \hline
-%1      & Se completa hasta el punto 4 inclusive                 & dd/mm/aaaa \\ \hline
+0      & Creación del documento.                                 &\fechaInicioName \\ \hline
+1      & Se completa hasta el punto 5 inclusive.                 & 3 de julio de 2022 \\ \hline
+2      & Se realizaron correcciones en distintos capítulos y se completó hasta el punto 9 inclusive.      & 9 de julio de 2022 \\ \hline
 %2      & Se completa hasta el punto 7 inclusive
 %		  Se puede agregar algo más \newline
 %		  En distintas líneas \newline
@@ -96,7 +97,7 @@ Buenos Aires, \fechaInicioName
 
 %Por medio de la presente se acuerda con el Lic. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en \textcolor{red}{la implementación de un prototipo de un sistema de monitoreo de las condiciones ambientales de un bioterio}, y tendrá un presupuesto preliminar estimado de \textcolor{red}{600} hs de trabajo y \textcolor{red}{\$75.000}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.%
 
-Por medio de la presente se acuerda con el Lic. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en {la implementación de un prototipo de un sistema de monitoreo de las condiciones ambientales de un bioterio}, y tendrá un presupuesto preliminar estimado de {600} hs de trabajo y {\$75.000}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con el Lic. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en {la implementación de un prototipo de un sistema de monitoreo de las condiciones ambientales de un bioterio}, y tendrá un presupuesto preliminar estimado de {600} hs de trabajo y {ARS 75.000}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -106,7 +107,7 @@ Se adjunta a esta acta la planificación inicial.
 \begin{table}[ht]
 \centering
 \begin{tabular}{ccc}
-\begin{tabular}[c]{@{}c@{}}Ariel Lutenberg \\ Director posgrado FIUBA\end{tabular} & \hspace{2cm} & \begin{tabular}[c]{@{}c@{}}\clientename \\ \empclientename \end{tabular} \vspace{2.5cm} \\ 
+\begin{tabular}[c]{@{}c@{}}Dr. Ing. Ariel Lutenberg \\ Director posgrado FIUBA\end{tabular} & \hspace{2cm} & \begin{tabular}[c]{@{}c@{}}\clientename \\ \empclientename \end{tabular} \vspace{2.5cm} \\ 
 \multicolumn{3}{c}{\begin{tabular}[c]{@{}c@{}} \supname \\ Director del Trabajo Final\end{tabular}} \vspace{2.5cm} \\
 %\begin{tabular}[c]{@{}c@{}}\jurunoname \\ Jurado del Trabajo Final\end{tabular}     &  & \begin{tabular}[c]{@{}c@{}}\jurdosname\\ Jurado del Trabajo Final\end{tabular}  \vspace{2.5cm}  \\
 %\multicolumn{3}{c}{\begin{tabular}[c]{@{}c@{}} \jurtresname\\ Jurado del Trabajo Final\end{tabular}} \vspace{.5cm}                                                                     
@@ -121,25 +122,25 @@ Se adjunta a esta acta la planificación inicial.
 
 Un bioterio es un área artificial controlada donde se alojan animales o plantas bajo ciertas condiciones que permitan el desarrollo de la especie para guarda, crio o fines experimentales. Se deben registrar y estudiar las variables ambientales del laboratorio en general y de los bioterios en particular. Estas variables son: temperatura, humedad, cantidad de luz y CO2.
 
-El enfoque actual integrador del estudio de las enfermedades transmitidas a los animales, vegetales y humanos, involucra aspectos ecológicos y epidemiológicos denominados ecoepidemiológicos.
+Estas áreas artificiales pueden utilizarse en nuevas disciplinas, por ejemplo, la ecoepidemiología. Es el enfoque actual integrador del estudio de las enfermedades transmitidas a los animales, vegetales y humanos, involucra aspectos ecológicos y epidemiológicos denominados ecoepidemiológicos.
 
-Los artrópodos son uno de los agentes transmisores de enfermedades. De modo independiente a su rol en el ciclo de vida del agente etiológico viral, bacteriano o parasitario. Actúan por acción directa como vector o indirecta por acción traumática e irritante de su picadura. 
+En el bioterio se tendrán artrópodos. Los artrópodos son uno de los agentes transmisores de enfermedades. De modo independiente a su rol en el ciclo de vida del agente etiológico viral, bacteriano o parasitario. Actúan por acción directa como vector o indirecta por acción traumática e irritante de su picadura. 
 
-Los ciclos reproductivos de los artrópodos juegan un papel fundamental en la epidemiología de las enfermedades transmisibles. Hay diferentes causas que pueden afectar la transmisión de una enfermedad: las tasas de fecundidad y de mortalidad, la densidad de la población, su distribución por edades, la variación genética y la tasa de migración.  Algunas de estas variables pueden ser controladas en condiciones experimentales como la temperatura, humedad, ciclos de luz y ventilación como factores abióticos esenciales. Los ambientes especialmente diseñados, denominados insectarios, bioterios o animalarios, son la base de diversos estudios (Insect Morphology and Phylogeny, 2014)
+Los ciclos reproductivos de los artrópodos juegan un papel fundamental en la epidemiología de las enfermedades transmisibles. Hay diferentes causas que pueden afectar la transmisión de una enfermedad: las tasas de fecundidad y de mortalidad, la densidad de la población, su distribución por edades, la variación genética y la tasa de migración.  Algunas de estas variables pueden ser controladas en condiciones experimentales como la temperatura, humedad, ciclos de luz y ventilación como factores abióticos esenciales. Los ambientes especialmente diseñados, denominados insectarios, bioterios o animalarios, son la base de diversos estudios (Insect Morphology and Phylogeny, 2014).
 
-Los artrópodos tienen varios estados en su ciclo de vida relacionado con su metamorfosis. Puede ser completa (holometábolos): huevo, larva, pupa e imago. O bien incompletas (hemimetábolos) huevos, ninfas, imagos y con clasificaciones intermedias.  Cada uno de los estados tienen requerimientos de temperatura, humedad o inundación.  
+Los artrópodos tienen varios estados en su ciclo de vida relacionados con su metamorfosis. La metamorfosis completa (holometábolos): huevo, larva, pupa e imago. O bien la metamorfosis incompletas (hemimetábolos) huevos, ninfas, imagos y con clasificaciones intermedias.  Cada uno de los estados tienen requerimientos de temperatura, humedad o inundación.  
 
-Los artrópodos hematófagos presentan limitaciones al momento de mantenerlos o de desarrollar su biología. Dependen de la fuente de alimentación sanguínea y otros nutrientes.  El rango de temperatura en general oscila entre 24ºC y 26ºC y 80% a 95% de humedad relativa, con fotoperíodos mediante ciclos de luz-oscuridad de 12 horas e intensidad de luz y tipo de luz variable según requerimientos (Arthropod Containment Guidelines, 2019).
+Los artrópodos hematófagos presentan limitaciones al momento de mantenerlos o de desarrollar su biología. Dependen de la fuente de alimentación sanguínea y otros nutrientes.  El rango de temperatura en general oscila entre 24-26 ºC y 80-95 \% de humedad relativa, con fotoperíodos mediante ciclos de luz-oscuridad de 12 horas e intensidad de luz y tipo de luz variable según requerimientos (Arthropod Containment Guidelines, 2019).
 
-Los artrópodos que requieren agua como parte del ciclo de vida, como culícidos (mosquitos), simúlidos y ceratopogónidos (carachai, jejenes y polvorines) dependen de la calidad del agua y la temperatura ambiente. A mayor temperatura el ciclo se acorta y, por el contrario, a menor temperatura se prolonga; algunos casos incluso entran en latencia (diapausa).
+Otro factor importante a tener en cuenta con los artrópodos es el agua, requieren agua como parte del ciclo de vida, como culícidos (mosquitos), simúlidos y ceratopogónidos (carachai, jejenes y polvorines) dependen de la calidad del agua y la temperatura ambiente. A mayor temperatura el ciclo se acorta y, por el contrario, a menor temperatura se prolonga; algunos casos incluso entran en latencia (diapausa).
 
-Las larvas pueden ser acuáticas o terrestres. Se deben considerar la humedad relativa ambiental y requerimientos nutricionales diferentes. En el caso de las pupas o crisálidas, dependiendo de la especie de vectores, la temperatura es importante debido a que es un estado de transformación y no de alimentación como en la anterior. Los imagos eclosionarán en un ambiente controlado, pero no significa que continúen el ciclo de reproducción y generen colonias parentales o bien filiales de la misma especie (Insect Morphology and Phylogeny, 2014)
+Uno de los estado del ciclo de vida de los artrópodos es larva. Las larvas pueden ser acuáticas o terrestres. Se deben considerar la humedad relativa ambiental y requerimientos nutricionales diferentes. En el caso de las pupas o crisálidas, dependiendo de la especie de vectores, la temperatura es importante debido a que es un estado de transformación y no de alimentación como en la anterior. Los imagos eclosionarán en un ambiente controlado, pero no significa que continúen el ciclo de reproducción y generen colonias parentales o bien filiales de la misma especie (Insect Morphology and Phylogeny, 2014).
 
-El estudio de la biología en condiciones experimentales solo puede aplicarse a determinados artrópodos debido a las limitaciones propias del ciclo natural según experiencias preliminares.  Los resultados de estas observaciones permiten investigar aspectos referentes a los mecanismos de transmisión de patógenos, las comparaciones genéticas de poblaciones, la sistemática y la susceptibilidad a los insecticidas, entre otros. Sin embargo, debido a la gran dificultad de mantener a la mayoría de las colonias durante más de unas pocas generaciones, impide contar con tablas de vida. Situación que limita la comprensión del comportamiento de las colonias en la naturaleza (Insect Morphology and Phylogeny, 2014)
+El estudio de la biología en condiciones experimentales solo puede aplicarse a determinados artrópodos debido a las limitaciones propias del ciclo natural según experiencias preliminares.  Los resultados de estas observaciones permiten investigar aspectos referentes a los mecanismos de transmisión de patógenos, las comparaciones genéticas de poblaciones, la sistemática y la susceptibilidad a los insecticidas, entre otros. Sin embargo, existe gran dificultad de mantener a la mayoría de las colonias durante más de unas pocas generaciones, impide contar con tablas de vida. Situación que limita la comprensión del comportamiento de las colonias en la naturaleza (Insect Morphology and Phylogeny, 2014).
 
 El entorno de una colonia no puede duplicar las condiciones de nutrición, temperatura, humedad. La consecuencia será la afectación en el comportamiento de los adultos, la mortalidad de los huevos, el período de crecimiento de las larvas y la mortalidad de los adultos. No obstante, los datos de laboratorio proporcionan información de referencia esencial sobre el potencial reproductivo de algunas especies sometidas a experiencia como mosquitos y flebótomos (Diptera: Psychodidae: Phlebotominae). 
 
-Para estudios en biología de poblaciones de flebótomos en el campo, estas observaciones proporcionan pautas para aproximar los límites de los comportamientos biológicos esperados. Lo cual permite diseñar estrategias de control y de comprensión de comportamientos aplicables al desarrollo de mapas de riesgo epidemiológico (Escovar et al., 2004, Bueno Marí et al., 2015)
+Para estudios en biología de poblaciones de flebótomos en el campo, estas observaciones proporcionan pautas para aproximar los límites de los comportamientos biológicos esperados. Lo cual permite diseñar estrategias de control y de comprensión de comportamientos aplicables al desarrollo de mapas de riesgo epidemiológico (Escovar et al., 2004, Bueno Marí et al., 2015).
 
 
 El presente proyecto se desteca especialmente por incorporar una aplicación y un dispositivo que contendrá sensores capaces de registrar la temperatura, humedad, luminosidad y saturación de CO2 del bioterio. Podrá ser usado en cada uno de los estados larvarios, según las variables descriptas en los párrafos anteriores. Facilitará el registro, sistematización, alertas y presentación de datos periódicos en un tablero. Esto fortalecerá el proceso de investigación en todas sus etapas.
@@ -149,7 +150,7 @@ En la figura 1 se presenta el diagrama general del sistema. Se observa que los d
 \begin{figure}[htpb]
 \centering 
 \includegraphics[width=.5\textwidth]{./Figuras/figura1.png}
-\caption{Diagrama general del sistema}
+\caption{Diagrama general del sistema.}
 \label{fig:diagBloques}
 \end{figure}
 
@@ -173,13 +174,13 @@ Orientador    & \supname	      & \pertesupname 	& Director Trabajo final \\ \hli
 
 \begin{itemize}
 	\item Cliente: Juan Rosa es riguroso y exigente en los detalles.
-	\item Responsable: Norberto Rodríguez,único personal en el equipo de desarrollo.
+	\item Responsable: Norberto Rodríguez, único personal en el equipo de desarrollo.
 \end{itemize}
 
 
 \section{3. Propósito del proyecto}
 \label{sec:proposito}
-El propósito de este proyecto es desarrollar un dispositivo para el monitoreo de las condiciones ambientales del bioterio, que incluya el registro, sistematización, presentación de alertas y análisis de información.
+El propósito de este proyecto es desarrollar un dispositivo para el monitoreo de las condiciones ambientales del bioterio, que incluya el registro de la telemetría, sistematización u organización de los datos recolectados, presentación de alertas vía SMTP a los investigadores y análisis de información por medio de un tablero de mandos.
 
 \section{4. Alcance del proyecto}
 \label{sec:alcance}
@@ -191,7 +192,7 @@ Se desarrollaran las siguientes actividades:
 	\item Confección de un prototipo de dispositivo encargado de la telemetría.
 	\item Configuración del servidor Ubuntu server GNU/Linux distribución basada en Debian.
 	\item Instalación de la aplicación web.
-	\item Instalación y configuración de la base de datos
+	\item Instalación y configuración de la base de datos.
 	\item Confección de un dashboard.
 	\item Confección del módulo de alertas vía SMTP.
 \end{itemize}
@@ -199,7 +200,7 @@ Se desarrollaran las siguientes actividades:
 
 El presente proyecto no incluye:
 \begin{itemize}
-	\item Provisión de la infraestructura de datos e internet.
+	\item Provisión de la infraestructura de datos e Internet.
 	\item Certificaciones ante autoridades competentes.
 	\item Desarrollos para la automatización del bioterio.
 \end{itemize}
@@ -209,113 +210,243 @@ El presente proyecto no incluye:
 
 Para el desarrollo del presente proyecto se supone que:
 \begin{itemize}
-	\item En los bioterios donde se instalaran los dispositivos tendrán acceso a internet.
-	\item Se contara con los recursos humanos necesarios por parte del Instituto de Medicina Regional para llevar a cabo el proyecto.
-	\item Existe la disponibilidad de los componentes necesario para el desarrollo del prototipo de dispositivo.
+	\item Los bioterios tendrán acceso a Internet.
+	\item Se contará con los recursos humanos necesarios por parte del Instituto de Medicina Regional para llevar a cabo el proyecto.
+	\item Existe la disponibilidad de los componentes necesarios para el desarrollo del prototipo.
 \end{itemize}
 
 \section{6. Requerimientos}
 \label{sec:requerimientos}
 
-\begin{consigna}{red}
-Los requerimientos deben numerarse y de ser posible estar agruparlos por afinidad, por ejemplo:
-
+Los requerimientos identificados son:
 \begin{enumerate}
-	\item Requerimientos funcionales
+	\item Requerimientos de hardware de los nodos
 		\begin{enumerate}
-			\item El sistema debe...
-			\item Tal componente debe...
-			\item El usuario debe poder...
+			\item Cada nodo debe estar conformado por un microcontrolador.
+			\item Sensor de temperatura y humedad.
+			\item Sensor de Luz.
+			\item Sensor de CO2.
+			\item Fuente de alimentación.
+			\item Módulo Wi-Fi.
 		\end{enumerate}
-	\item Requerimientos de documentación
+	\item Requerimientos de software
 		\begin{enumerate}
-			\item Requerimiento 1
-			\item Requerimiento 2 (prioridad menor)
+			\item El sistema debe permitir configurar los parámetros para las alertas.
+			\item El usuario debe poder seleccionar el nodo a visualizar en el tablero de mandos.
+			\item El sistema debe permitir asignar un nodo a un bioterio en particular.
 		\end{enumerate}
-	\item Requerimiento de testing...
-	\item Requerimientos de la interfaz...
-	\item Requerimientos interoperabilidad...
-	\item etc...
+	\item Requerimiento de presentación
+		\begin{enumerate}
+			\item El sistema debe proveer un tablero de mandos.
+			\item El usuario debe poder visualizar la historia de la telemetría para un posterior análisis cuando se evalúe el desempeño de la colonia.
+		\end{enumerate}
+	\item Requerimientos de alertas
+		\begin{enumerate}
+			\item El sistema debe notificar al investigador sobre cambios en la telemetría mediante el envío de un correo electrónico.
+			\item El usuario debe poder observar alertas en el tablero de mandos.
+		\end{enumerate}
+	\item Requerimientos de almacenamiento
+		\begin{enumerate}
+			\item Temperatura.
+			\item Humedad.
+			\item Cantidad de luz.
+			\item CO2.
+			\item Fecha y hora de la telemetría.
+		\end{enumerate}
 \end{enumerate}
-
-Leyendo los requerimientos se debe poder interpretar cómo será el proyecto y su funcionalidad.
-
-Indicar claramente cuál es la prioridad entre los distintos requerimientos y si hay requerimientos opcionales. 
-
-No olvidarse de que los requerimientos incluyen a las regulaciones y normas vigentes!!!
-
-Y al escribirlos seguir las siguientes reglas:
-\begin{itemize}
-	\item Ser breve y conciso (nadie lee cosas largas). 
-	\item Ser específico: no dejar lugar a confusiones.
-	\item Expresar los requerimientos en términos que sean cuantificables y medibles.
-\end{itemize}
-
-\end{consigna}
 
 \section{7. Historias de usuarios (\textit{Product backlog})}
 \label{sec:backlog}
 
-\begin{consigna}{red}
-Descripción: En esta sección se deben incluir las historias de usuarios y su ponderación (\textit{history points}). Recordar que las historias de usuarios son descripciones cortas y simples de una característica contada desde la perspectiva de la persona que desea la nueva capacidad, generalmente un usuario o cliente del sistema. La ponderación es un número entero que representa el tamaño de la historia comparada con otras historias de similar tipo.
+Como criterio de ponderación se utilizó la serie Fibonacci.
 
-El formato propuesto es: "como [rol] quiero [tal cosa] para [tal otra cosa]."
+\begin{enumerate}
+	\item Dificultad
+		\begin{enumerate}
+			\item Baja - peso 1.
+			\item Media - peso 3.
+			\item Alta - peso 5.
+		\end{enumerate}
+	\item Complejidad
+		\begin{enumerate}
+			\item Baja - peso 1.
+			\item Media - peso 5.
+			\item Alta - peso 13.
+		\end{enumerate}
+	\item Riesgo o incertidumbre
+		\begin{enumerate}
+			\item Bajo - peso 2.
+			\item Medio - peso 3.
+			\item Alto - peso 5.
+		\end{enumerate}
+\end{enumerate}
 
-Se debe indicar explícitamente el criterio para calcular los \textit{story points} de cada historia
-\end{consigna}
+\begin{itemize}
+	\item Como investigador deseo poder visualizar la temperatura del bioterio para que el cambio de temperatura no comprometa la colonia de artrópodos y tomar acciones preventivas, por ejemplo el corte de energía eléctrica que afectan a los aires acondicionados.		
+	Ponderación:13.
+	
+	Dificultad: media (3).
+	
+	Complejidad: media (5).
+	
+	Riesgo: medio (3).
+	
+	(3+5+3=11 valor siguiente de la serie Fibonacci 13).
+
+	\item Como investigador deseo poder visualizar la humedad del bioterio para que no se vea comprometida la colonia de artrópodos.
+	Ponderación:13.
+	
+	Dificultad: media (3).
+	
+	Complejidad: media (5).
+	
+	Riesgo: medio (3).
+	
+	(3+5+3=11 valor siguiente de la serie Fibonacci 13).
+	
+	\item Como investigador deseo poder visualizar la cantidad de luz recibida para  que no afecte a la colonia de artrópodos a largo plazo.
+	Ponderación:21.
+	
+	Dificultad: alta (5).
+	
+	Complejidad: medio (5).
+	
+	Riesgo: medio (3).
+	
+	(5+5+3=13 valor siguiente de la serie Fibonacci 21).
+	
+	\item Como investigador deseo poder visualizar la cantidad de CO2 del bioterio para que no se vea comprometida la colonia de artrópodos.
+	Ponderación:13.
+	
+	Dificultad: baja (1).
+	
+	Complejidad: media (5).
+	
+	Riesgo: bajo (2).
+	
+	(1+5+2=8 valor siguiente de la serie Fibonacci 13).
+	
+	\item Como investigador deseo poder consultar los datos registrados con anterioridad para medir o comparar su impacto en la evolución de la colonia.
+	Ponderación:34.
+	
+	Dificultad: alta (5).
+	
+	Complejidad: alta (13).
+	
+	Riesgo: medio (3).
+	
+	(5+13+3=21 valor siguiente de la serie Fibonacci 34).
+	
+	\item Como investigador deseo recibir alertas por correo electrónico ante cambios en las condiciones del bioterio y así poder tomar medidas correctivas.
+	Ponderación:34.
+	
+	Dificultad: alta (5).
+	
+	Complejidad: alta (13).
+	
+	Riesgo: alto (5).
+	
+	(5+13+5=23 valor siguiente de la serie Fibonacci 34).
+	
+	\item Como investigador deseo poder visualizar un tablero de mandos independientemente de mi ubicación para supervisar el bioterio.
+	Ponderación:34.
+	
+	Dificultad: media (3).
+	
+	Complejidad: alta (13).
+	
+	Riesgo: alto (5).
+	
+	(3+13+5=21 valor siguiente de la serie Fibonacci 34).
+	
+\end{itemize}
 
 \section{8. Entregables principales del proyecto}
 \label{sec:entregables}
 
-\begin{consigna}{red}
-
-Los entregables del proyecto son (ejemplo):
-
 \begin{itemize}
-	\item Manual de uso
-	\item Diagrama de circuitos esquemáticos
-	\item Código fuente del firmware
-	\item Diagrama de instalación
+	\item Manual de uso.
+	\item Diagrama del sistema.
+	\item Código fuente del firmware.
+	\item Código fuente del la aplicación.
+	\item Un prototipo de nodo.
 	\item Informe final
-	\item etc...
 \end{itemize}
-
-\end{consigna}
 
 \section{9. Desglose del trabajo en tareas}
 \label{sec:wbs}
 
-\begin{consigna}{red}
-El WBS debe tener relación directa o indirecta con los requerimientos.  Son todas las actividades que se harán en el proyecto para dar cumplimiento a los requerimientos. Se recomienda mostrar el WBS mediante una lista indexada:
-
 \begin{enumerate}
-\item Grupo de tareas 1
+\item Investigación y planificación del proyecto. (60 hs)
 	\begin{enumerate}
-	\item Tarea 1 (tantas hs)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas hs)
+	\item Seleccionar arquitectura para el sistema. (5 hs)
+	\item Investigar tecnologías IoT. (15 hs)
+	\item Investigar sensores. (15 hs)
+	\item Investigar microcontroladores. (15 hs)
+	\item Investigar arquitecturas de microservicios. (10 hs)
 	\end{enumerate}
-\item Grupo de tareas 2
+\item Adquisición de componentes. (10 hs)
 	\begin{enumerate}
-	\item Tarea 1 (tantas hs)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas hs)
+	\item Consultar costos de los componentes. (5 hs)
+	\item Realizar los pedidos a proveedores. (5 hs)
 	\end{enumerate}
-\item Grupo de tareas 3
+\item Instalación e implementación de la base de datos. (20 hs)
 	\begin{enumerate}
-	\item Tarea 1 (tantas hs)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas hs)
-	\item Tarea 4 (tantas hs)
-	\item Tarea 5 (tantas hs)
+	\item Instalación. (8 hs)
+	\item Creación y configuración (12 hs)
+
+	\end{enumerate}
+\item Desarrollo del sistema - back-end. (120 hs)
+	\begin{enumerate}
+	\item Instalación de entorno de trabajo. (40 hs)
+	\item Desarrollo de API. (40 hs)
+	\item Desarrollo de alertas. (40 hs)
+	\end{enumerate}
+\item Desarrollo del sistema - front-end. (120 hs)
+	\begin{enumerate}
+	\item Desarrollo de acceso al sistema. (20 hs)
+	\item Desarrollo del tablero de mandos. (45 hs)
+	\item Desarrollo de visualización histórica de telemetría. (15 hs)
+	\item Desarrollo de configuración de alertas. (25 hs)
+	\item Desarrollo de menú de opciones. (5 hs)
+	\item Desarrollo de ajustes de dispositivos. (5 hs)
+	\item Desarrollo de ajustes de usuarios. (5 hs)
+	\end{enumerate}
+\item Desarrollo de Firmware - módulo de temperatura y humedad. (85 hs)
+	\begin{enumerate}
+	\item Construcción del módulo e integración de componentes. (20 hs)
+	\item Desarrollo del Firmware para lectura de datos. (40 hs)
+	\item Prueba de conexión con la aplicación. (25 hs)
+	\end{enumerate}
+\item Desarrollo de Firmware - módulo de luz. (55 hs)
+	\begin{enumerate}
+	\item Construcción del módulo e integración de componentes. (10 hs)
+	\item Desarrollo del Firmware para lectura de datos. (30 hs)
+	\item Prueba de conexión con la aplicación. (15 hs)
+	\end{enumerate}
+\item Desarrollo de Firmware - módulo de CO2. (55 hs)
+	\begin{enumerate}
+	\item Construcción del módulo e integración de componentes. (10 hs)
+	\item Desarrollo del Firmware para lectura de datos. (30 hs)
+	\item Prueba de conexión con la aplicación. (15 hs)
+	\end{enumerate}
+\item Testing. (30 hs)
+	\begin{enumerate}
+	\item Prueba de conectividad. (2 hs)
+	\item Prueba de sensores. (3 hs)
+	\item Prueba del tablero de mandos. (4 hs)
+	\item Prueba de alertas. (4 hs)
+	\item Verificación y validación del sistema completo. (10 hs)
+	\item Prueba del prototipo en ambiente real. (7 hs)
+	\end{enumerate}
+\item Presentación del proyecto y cierre. (45 hs)
+	\begin{enumerate}
+	\item Escritura de la documentación. (15 hs)
+	\item Escritura de plan de trabajo final. (30 hs)
 	\end{enumerate}
 \end{enumerate}
 
-Cantidad total de horas: (tantas hs)
-
-Se recomienda que no haya ninguna tarea que lleve más de 40 hs. 
-
-\end{consigna}
+Cantidad total de horas: (600 hs)
 
 \section{10. Diagrama de Activity On Node}
 \label{sec:AoN}
